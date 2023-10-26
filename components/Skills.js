@@ -5,7 +5,7 @@ import {motion} from "framer-motion"
 
 const SkillNames=({name,x,y})=>{
     return(
-            <motion.div className='flex justify-center items-center absolute rounded-full font-semibold bg-dark text-light py-3 px-6 shadow-dark cursor-pointer dark:bg-light dark:text-dark dark:shadow-light lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 sm:font-bold' 
+            <motion.div className='flex justify-center items-center absolute rounded-full sm:text-xs sm:font-normal font-semibold bg-dark text-light py-3 px-6 shadow-dark cursor-pointer dark:bg-light dark:text-dark dark:shadow-light lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3' 
             whileHover={{scale:1.1}}
             initial={{x:0,y:0}}
             whileInView={{x:x,y:y,transition:{duration:1.5}}}
@@ -22,20 +22,27 @@ const Skills = () => {
             <motion.div className='flex justify-center items-center absolute rounded-full font-semibold  p-8 shadow-dark bg-dark dark:text-dark dark:shadow-light dark:bg-light text-white cursor-pointer lg:p-6 md:p-4 sm:p-2' whileHover={{scale:1.1}}>
             Web
             </motion.div>
-            <SkillNames name={"HTML"} x="18vw" y="2vw"/>
-            <SkillNames name={"CSS"} x="-18vw" y="-3vw"/>
-            <SkillNames name={"Javascript"} x="10vw" y="-13vw"/>
-            <SkillNames name={"ReactJS"} x="-20vw" y="9vw"/>
-            <SkillNames name={"NextJS"} x="-10vw" y="-14vw"/>
-            <SkillNames name={"MongoDB"} x="20vw" y="-18vw"/>
-            <SkillNames name={"MySQL"} x="36vw" y="7vw"/>
-            <SkillNames name={"Tailwind CSS"} x="31vw" y="-5vw"/>
-            <SkillNames name={"C++"} x="23vw" y="12vw"/>
-            <SkillNames name={"C"} x="-7vw" y="18vw"/>
-            <SkillNames name={"Java"} x="5vw" y="14vw"/>
-            <SkillNames name={"Python"} x="-28vw" y="15vw"/>
+            <SkillNames name={"HTML"} x="12vw" y="-8vw"/>
+            <SkillNames name={"CSS"} x="-12vw" y="-8vw"/>
+            <SkillNames name={"C"} x="12vw" y="8vw"/>
+            <SkillNames name={"C++"} x="-12vw" y="8vw"/>
+            <SkillNames name={"Java"} x="0vw" y="18vw"/>
+            <SkillNames name={"JS"} x="0vw" y="-18vw"/>
+            <SkillNames name={"MongoDB"} x="25vw" y="0vw"/>
+            <SkillNames name={"MySQL"} x="-25vw" y="0vw"/>
+            <SkillNames name={"ReactJS"} x="22vw" y="-18vw"/>
+            <SkillNames name={"NextJS"} x="-22vw" y="-18vw"/>
+            <SkillNames name={"Git"} x="-25vw" y="15vw"/>
+            <SkillNames name={"Github"} x="25vw" y="15vw"/>
+            <SkillNames name={"Tailwind"} x="40vw" y="-8vw"/>
+            <SkillNames name={"Python"} x="-40vw" y="-8vw"/>
+
+            {/*
+
+            
+            
             <SkillNames name={"Git"} x="-20vw" y="-18vw"/>
-            <SkillNames name={"Github"} x="-28vw" y="-8vw"/>
+            <SkillNames name={"Github"} x="-28vw" y="-8vw"/> */}
         </div>
     </>
   )
