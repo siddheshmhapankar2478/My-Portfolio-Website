@@ -1,16 +1,16 @@
 import React from 'react'
 import Education from '@/components/Education'
 import Experience from '@/components/Experience'
-import { PageWrapper } from '../pagewrapper'
+import TransitionEffect from "@/components/TransitionEffect";
 
 
 const ExperiencePage = () => {
   return (
-    <PageWrapper>
-      
+    <>
+    <TransitionEffect/>
       <Experience/>
       <Education/>
-    </PageWrapper>
+    </>      
   )
 }
 

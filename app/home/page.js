@@ -2,11 +2,12 @@ import Image from 'next/image'
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import LaunchIcon from '@mui/icons-material/Launch';
-import { PageWrapper } from '../pagewrapper';
 import TransitionEffect from "@/components/TransitionEffect";
+
+
 export default function Home(){
   return (
-    <PageWrapper>
+    <>
     <TransitionEffect/>
           <div className="flex items-center justify-between w-full  min-h-screen bg-light dark:bg-dark dark:text-light lg:flex-col-reverse md:flex-col md:justify-normal sm:justify-normal">
             <div className="w-1/2 h-[80vh] md:h-[50vh] sm:h-[50vh] flex  justify-center  md:w-3/4 sm:w-3/4 sm:mx-auto lg:mx-auto md:mx-auto md:justify-center sm:justify-center">
@@ -30,6 +31,6 @@ export default function Home(){
           {/* <Lightbulb className='w-24 text-yellow-300 scale-[14.50]'/> */}
         <Image src={"/images/svgs/miscellaneous_icons_1.svg"} priority quality={100} alt="lightbulb" width={300} height={300} className='w-full h-auto'  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"></Image>
         </div>
-    </PageWrapper>
+    </>
   )
 }

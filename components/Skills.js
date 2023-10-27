@@ -17,7 +17,7 @@ const SkillNames=({name,x,y})=>{
 const Skills = () => {
   return (
     <>
-        <h2 className='font-bold text-8xl mt-64 w-full text-center md:text-4xl sm:text-4xl'>Skills</h2>
+        <h2 className='font-bold text-8xl mt-32 w-full text-center md:text-4xl sm:text-4xl'>Skills</h2>
         <div className="w-full h-screen lg:h-[80vh] md:h-[60vh] sm:h-[40vh] relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd sm:bg-circularLightSm sm:dark:bg-circularDarkSm">
             <motion.div className='flex justify-center items-center absolute rounded-full font-semibold  p-8 shadow-dark bg-dark dark:text-dark dark:shadow-light dark:bg-light text-white cursor-pointer lg:p-6 md:p-4 sm:p-2' whileHover={{scale:1.1}}>
             Web
