@@ -2,6 +2,8 @@
 import React, { useRef } from 'react'
 import { motion,useScroll } from 'framer-motion';
 import LiIcon from './LiIcon';
+import TransitionEffect from "@/components/TransitionEffect";
+
 const Details = ({position,company,companyLink,time,duration,work}) => {
     const ref=useRef(null);
     return (
@@ -26,7 +28,9 @@ const Experience = () => {
         offset:["start end","center start"]
     });
   return (
-    <div className="mt-64 mb-96 md:mt-32 sm:mt-32 md:mb-0 sm:mb-0">
+    <>
+          <TransitionEffect/>
+    <div className="mt-0 mb-96 md:mt-32 sm:mt-32 md:mb-0 sm:mb-0">
         <h1 className="font-bold text-8xl mb-20  text-center w-full md:text-4xl sm:text-4xl">Experience</h1>
         <div ref={ref} className='w-3/4 mx-auto relative md:w-5/6 sm:w-5/6 '>
         <motion.div style={{scaleY:scrollYProgress}} className='absolute left-8 md:left-4 sm:left-4 top-0 w-1 h-full bg-primary dark:bg-primaryDark origin-top'></motion.div>
@@ -36,6 +40,7 @@ Developed an app with a loader functionality for better user interactions and di
             </ul>
         </div>
     </div>
+    </>
   )
 }
 
