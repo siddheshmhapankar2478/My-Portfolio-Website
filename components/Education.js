@@ -26,7 +26,7 @@ const Education = () => {
         offset:["start end","center start"]
     });
   return (
-    <div className="mt-32 lg:mb-[800px] 2xl:mb-[600px] md:mt-32 sm:mt-32 md:mb-60 sm:mb-96 ">
+    <div className="mt-32 mb-96 lg:mb-[800px] 2xl:mb-[600px] md:mt-32 sm:mt-32 md:mb-60 sm:mb-96 ">
         <h1 className="font-bold text-8xl mb-20 text-center w-full md:text-4xl sm:text-4xl">Education</h1>
         <div ref={ref} className='w-3/4 mx-auto relative md:w-5/6 sm:w-5/6 '>
         <motion.div style={{scaleY:scrollYProgress}} className='absolute left-8 md:left-4 sm:left-4 top-0 w-1 h-full bg-primary dark:bg-primaryDark origin-top'></motion.div>

@@ -27,7 +27,7 @@ export default function Home(){
               </div>
             </div>
           </div>
-        <div className="absolute right-12 bottom-4 inline-block w-24 lg:hidden md:hidden sm:hidden">
+        <div className="hidden right-12 bottom-4 w-24 lg:hidden md:hidden sm:hidden">
           {/* <Lightbulb className='w-24 text-yellow-300 scale-[14.50]'/> */}
         <Image src={"/images/svgs/miscellaneous_icons_1.svg"} priority quality={100} alt="lightbulb" width={300} height={300} className='w-full h-auto'  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"></Image>
         </div>
